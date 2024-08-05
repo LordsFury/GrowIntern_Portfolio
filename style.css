@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Poppins;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+}
+
+.main nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+.logo{
+    letter-spacing: 1px;
+    color: white;
+    font-size: 6vmin;
+}
+
+span{
+    color: rgb(33, 145, 250);
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: .7rem 1rem;
+}
+
+nav ul  li a{
+    color: white;
+    text-decoration: none;
+    font-size: 3vmin;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex;
+}
+
+nav ul li a:hover{
+    color: rgb(33, 145, 250);
+    transform: scale(1.3);
+    transition: .2s;
+}
+
+.a-btn{
+    background-color: rgb(33, 145, 250);
+    border: 2px solid rgb(33, 145, 250);
+    border-radius: .5rem;
+    padding: .3rem 1.3rem;
+    font-size: 2.5vmin;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.a-btn:hover{
+    transform: scale(1.2);
+    transition: .2s;
+    background-color: transparent;
+}
+
+.content {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+.main-content{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.main-content h1{
+    color: chartreuse;
+    margin: .1rem 0px 1rem;
+    font-size: 10vmin;
+}
+
+.main-content h3{
+    color: white;
+    font-size: 4vmin;
+    margin-bottom: 2rem;
+}
+
+.main-content h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 3vmin;
+}
+
+.main-img img{
+    margin-right: 6rem;
+}
+
+.later form{
+    width: 20rem;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+}
+
+.later form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: .7rem 2rem .7rem 1rem;
+    border: 2px solid chartreuse;
+    outline: none;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: white;
+}
+
+.later form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: .6rem 1.5rem .6rem 1.5rem;
+    background-color: chartreuse;
+    color: black;
+    font-weight: bold;
+    border-radius: 10rem;
+    box-shadow: 0px;
+    top: .25rem;
+    right: .3rem;
+    cursor: pointer;
+}
+
+.later form input:last-child:hover{
+    background-color: white;
+}
+
+.about{
+    width: 100%;
+    height: 90vh;
+    padding: 2rem 0rem;
+    display: flex;
+}
+
+.about-image img{
+    width: 25vw;
+    height: 35vh;
+    border-radius: 1rem;
+    position: absolute;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: translateY(-10px);
+        transform: rotate(-20deg);
+    }
+}
+
+#pic1{
+    left: 3%;
+    top: 100%;
+}
+
+#pic2{
+    left: 32%;
+    top: 110%;
+}
+
+#pic3{
+    left: 15%;
+    top: 145%;
+}
+
+.about-text{
+    width: 35rem;
+    padding-left: 5rem;
+}
+
+.about-main{
+    width: 100vw;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+
+.about-text h2{
+    color: white;
+    font-size: 8vmin;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 4vmin;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.about-text p{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 3vmin;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.button{
+    background-color: rgb(33, 145, 250);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5rem;
+    padding: .7rem 1rem;
+    border: 2px solid rgb(33, 145, 250);
+    transition: .4s;
+}
+
+.button:hover{
+    background-color: black;
+    border: 2px solid rgb(33, 145, 250);
+    cursor: pointer;
+}
+
+.skills{
+    background-color: darkred;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    height: 155vh;
+    box-shadow: 10px 6px 12px 14px darkred;
+}
+
+.skills h1{
+    text-align: center;
+    margin: .1rem auto;
+    font-size: 8vmin;
+}
+
+.skills h3{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 4vmin;
+}
+
+.skills-main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.images img{
+    width: 35vw;
+    height: 55vh;
+    object-fit: fill;
+    border-radius: 5%;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.images p {
+    position: absolute;
+    padding: 1.5rem;
+    font-size: 3vmin;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
+    color: white;
+    opacity: 0;
+    transform: translateY(100%); /* Start text below the container */
+    transition: transform 0.5s ease, opacity 0.3s ease; /* Smooth transition */
+    text-align: center;
+}
+
+.images:hover img {
+    transform: scale(1.05); /* Optional: Slight zoom effect on hover */
+    opacity: .8;
+}
+
+.images:hover p {
+    opacity: 1;
+    transform: translateY(0); /* Slide text up into view */
+}
+
+#img1{
+    top: 220%;
+    left: 10%;
+}
+
+#img2{
+    top: 285%;
+    right: 5%;
+}
+
+#img3{
+    top: 285%;
+    left: 15%;
+}
+
+#img4{
+    top: 220%;
+    right: 10%;
+}
+
+#txt1{
+    box-shadow: 5px 5px 15px black;
+    text-align: center;
+    position: absolute;
+    top: 244%;
+    left: 9%;
+    width: 31rem;
+    color: white;
+    border-radius: 5%;
+}
+
+#txt2{
+    box-shadow: 5px 5px 15px black;
+    text-align: center;
+    position: absolute;
+    top: 314%;
+    right: 5%;
+    width: 30.5rem;
+    color: white;
+    border-radius: 5%;
+}
+
+#txt3{
+    box-shadow: 5px 5px 15px black;
+    text-align: center;
+    position: absolute;
+    top: 314%;
+    left: 14%;
+    width: 31rem;
+    color: white;
+    border-radius: 5%;
+}
+
+#txt4{
+    box-shadow: 5px 5px 15px black;
+    text-align: center;
+    position: absolute;
+    top: 250%;
+    right: 9.5%;
+    width: 31rem;
+    color: white;
+    border-radius: 5%;
+}
+
+.service{
+    background: black;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.title h2{
+    color: white;
+    font-size: 8vmin;
+    width: 1130px;
+    margin: auto;
+    text-align: center;
+}
+
+.title h3{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 4vmin;
+}
+
+.box{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.card{
+    position: relative;
+    background: rgb(27, 27, 27);
+    text-align: center;
+    width: 25vw;
+    height: 65vh;
+    font-size: 16px;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+@property --direction{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.card::before,
+.card::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    translate: -50% -50%;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    padding: 7px;
+    border-radius: 2rem;
+    background: conic-gradient(
+        from var(--direction),
+        transparent 70%,
+        white
+    );
+    animation: 2s rotate linear infinite;
+}
+
+.card::before{
+    filter: blur(1.5rem);
+    opacity: 0.8;
+}
+
+.card:hover{
+    background-color: rgb(63, 59, 59);
+}
+
+@keyframes rotate {
+    from{
+        --direction: 0deg;
+    }
+    to{
+        --direction: 360deg;
+    }
+}
+
+.card i{
+    font-size: 5rem;
+    display: block;
+    text-align: center;
+    margin: 1rem 0rem;
+    color: rgb(33, 145, 250);
+} 
+
+h5{
+    color: white;
+    font-size: 3.5vmin;
+    margin-bottom: 1rem;
+}
+
+.para p{
+    color: white;
+    font-size: 3vmin;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card .button{
+    background-color: rgb(33, 145, 250);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5rem;
+    padding: .6rem .9rem;
+    border: 2px solid black;
+    transition: .4s;
+}
+
+.card .button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(33, 145, 250);
+    cursor: pointer;
+}
+
+.contact-me{
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(41, 39, 39);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-me p{
+    color: white;
+    font-size: 5vmin;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact-me .button-two{
+    background-color: rgb(33, 145, 250);
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5rem;
+    padding: .6rem .9rem;
+    border: 2px solid black;
+    transition: .4s;
+}
+
+.contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid rgb(33, 145, 250);
+    cursor: pointer;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 22rem;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#con{
+    color: white;
+    font-size: 3vmin;
+    width: 30rem;
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 1rem;
+}
+
+.contact-img{
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-img img{
+    width: 4.7vw;
+    height: 10vh;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contact-img p{
+    font-size: 5vmin;
+    color: white;
+    margin-top: .5rem;
+    font-weight: bold;
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(33, 145, 250);
+    border-radius: 50%;
+    margin: 1rem .5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 3vmin;
+}
+
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end{
+    position: absolute;
+    color: rgb(33, 145, 250);
+    bottom: 1.5rem;
+    font-size: 3vmin;
+    font-weight: bold;
+    line-height: 1px;
+}
+
+/* Media Queries */
+
+@media(max-width: 490px){
+    .main nav{
+        align-items: flex-start;
+    }
+    
+}
